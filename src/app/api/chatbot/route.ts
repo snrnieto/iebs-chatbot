@@ -15,3 +15,7 @@ export async function POST(request: Request) {
     return new Response(error.message, { status: error?.status || 400 });
   }
 }
+
+export async function GET(request: Request) {
+  return new Response("Hello world", { status: 200 });
+}
